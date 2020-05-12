@@ -1,6 +1,6 @@
 docker build -t coffee4whale/multi-client:latest -t coffee4whale/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t coffee4whale/multi-server:latest -t coffee4whale/multi-client:$SHA -f ./server/Dockerfile ./server
-docker build -t coffee4whale/multi-worker:latest -t coffee4whale/multi-client:$SHA -f ./worker/Dockerfile ./worker
+docker build -t coffee4whale/multi-server:latest -t coffee4whale/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t coffee4whale/multi-worker:latest -t coffee4whale/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push coffee4whale/multi-client:latest
 docker push coffee4whale/multi-server:latest
